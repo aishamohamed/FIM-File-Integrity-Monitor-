@@ -10,6 +10,62 @@ The CIA triad in information securty stands for Confidentiality, Integrity, and 
 
 **File Integrity Monitor (FIM)** is an important tool in cybersecurity that verifies the integrity of files and systems to detect unauthorized changes, potential threats, or misconfigurations. 
 
-## Instalation
+This project is a basic but functional Python implementation of a FIM. It calculates and stores cryptographic hashes of files, then periodically checks for:
 
+- File modifications
+- File deletions
+- New (unexpected) file creations
+
+All changes are logged with timestamps for audit purposes.
+
+---
+## Instalation
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/aishamohamed/FIM-File-Integrity-Monitor-.git
+   cd FIM
+2. No external dependencies are required. The script uses only Python's standard library.
 ## Usage 
+
+Place the files you want to monitor inside the Files/ directory.
+
+Run the script:
+
+    ```bash
+    python3 FIM.py
+
+Choose one of the following options:
+
+A – Generate a new baseline (hash of all files in the directory)
+
+B – Start monitoring using the existing baseline
+
+Detected changes are printed to the terminal and also logged in audit_log.txt.
+
+
+## Features
+* SHA512 hashing for strong integrity validation
+
+* Detects:
+
+  * File modifications
+
+  * File deletions
+
+  * New file creations
+
+* Logs all events with timestamp
+
+* Lightweight, using only Python standard libraries
+
+* Terminal-based
+
+## File Structure
+```bash
+  File-Integrity-Monitor-/
+  ├── Files/              
+  ├── FIM.py              
+  ├── baseline.txt        
+  ├── audit_log.txt       
+  └── README.md           
