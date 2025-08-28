@@ -26,6 +26,8 @@ All changes are logged with timestamps for audit purposes.
    git clone https://github.com/aishamohamed/FIM-File-Integrity-Monitor-.git
    cd FIM
 2. No external dependencies are required. The script uses only Python's standard library.
+
+---
 ## Usage 
 
 Place the files you want to monitor inside the Files/ directory.
@@ -43,7 +45,7 @@ B – Start monitoring using the existing baseline
 
 Detected changes are printed to the terminal and also logged in audit_log.txt.
 
-
+---
 ## Features
 * SHA512 hashing for strong integrity validation
 
@@ -60,27 +62,30 @@ Detected changes are printed to the terminal and also logged in audit_log.txt.
 * Lightweight, using only Python standard libraries
 
 * Terminal-based
-
+---
 ## File Structure
-```bash
-  File-Integrity-Monitor-/
-  ├── Files/              
-  ├── FIM.py              
-  ├── baseline.txt        
-  ├── audit_log.txt       
-  └── README.md           
-
+-
+   ```bash
+   File-Integrity-Monitor-/
+   ├── Files/              
+   ├── FIM.py              
+   ├── baseline.txt        
+   ├── audit_log.txt       
+   └── README.md
+ 
+---
 ## Live Monitoring Example
 * File Modified: Shows the BEFORE and AFTER SHA-512 hashes.
 
 * New File Detected: Detects new files
-![Monitoring CLI output] images/monitoring_output.png)
+![Monitoring CLI output] (images/monitoring_output.png)
 
 ## Logged Audit Output
 ![Audit log output] (images/audit_log_output.png)
 * Timestamps make it easy to track when changes occurred.
 
 * Useful for post-event analysis or long-term monitoring.
+
 
 
 
