@@ -69,3 +69,20 @@ Detected changes are printed to the terminal and also logged in audit_log.txt.
   ├── baseline.txt        
   ├── audit_log.txt       
   └── README.md           
+
+## Live Monitoring Example
+* File Modified: Shows the BEFORE and AFTER SHA-512 hashes.
+
+* New File Detected: Detects new files
+![Monitoring CLI output] images/monitoring_output.png)
+
+## Logged Audit Output
+![Audit log output] (images/audit_log_output.png)
+* Timestamps make it easy to track when changes occurred.
+
+* Useful for post-event analysis or long-term monitoring.
+
+
+
+
+
